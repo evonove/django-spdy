@@ -1,0 +1,9 @@
+# IDE
+.idea
+
+# Django / Jython
+*.log
+*.pot
+*.pyc
+*.class
+local_settings.py
