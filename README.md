@@ -1,8 +1,8 @@
-Django-SPDY/3
-=============
+Django-SPDY
+===========
 The main goal of this experimental project is to deliver **Django 1.4.5** web pages using Jetty web container.
-The usefulness of this is to use Jetty SPDY support together with the capabilities to push associated resources of a main request (SPDY/3).
-To achieve this integration and build war package it's necessary to use [Jython][1] interpreter with [django-jython][2] module.
+The usefulness of this is to use Jetty SPDY support together with the capabilities to push associated resources of a main request (SPDY push).
+To achieve this integration and build war package it's necessary to use [Jython][1] interpreter with [django-jython][2] app.
 
 Django-SPDY up and running
 ==========================
@@ -17,7 +17,7 @@ Prerequisite
 * A browser that supports SPDY/2 or SPDY/3
 
 **Note:** NPN implementation relies on modifications of OpenJDK classes so you need to use the correct version according to your JDK version. You can find a list of the correct NPN library [here][8].
-NPN library can be put on your $JETTY_HOME.
+NPN library can be put on your `$JETTY_HOME`.
 
 Virtualenv configuration
 ------------------------
@@ -27,7 +27,7 @@ Virtualenv must be created using `jython` interpreter as follows (be sure that j
     $ workon django-spdy
     $ pip install -r requirements.txt
 
-Build war package **TODO**
+Build war package
 -----------------
 Be sure that `'doj'` is enabled on Django `INSTALLED_APPS`. Then use:
 
@@ -55,12 +55,13 @@ And now?
 Deploy your Django app (`django_spdy.war`) inside Jetty webapps folder (`$JETTY_HOME/webapps/root.war`).
 Now you can run jetty:
 
-    $ java -Xbootclasspath/p:npn-boot-{$YOUR_NPN_VERSION}.jar -jar start.jar
+    $ java -Xbootclasspath/p:npn-boot-{YOUR_NPN_VERSION}.jar -jar start.jar
 
 **Ready to push?**
-* `http://localhost:8080` (HTTP 1.1)
-* `https://localhost:8443` (SPDY/2 without push strategy)
-* `https://localhost:8444` (SPDY/3 with push strategy)
+
+* http://localhost:8080 (HTTP)
+* https://localhost:8443 (SPDY without push strategy)
+* https://localhost:8444 (SPDY with push strategy)
 
 Pre-build package and configuration
 ===================================
