@@ -1,11 +1,11 @@
 Django-SPDY
 ===========
 The main goal of this experimental project is to deliver **Django 1.4.5** web pages using Jetty web container.
-The usefulness of this is to use Jetty SPDY support together with the capabilities to push associated resources of a main request (SPDY push).
-To achieve this integration and build war package it's necessary to use [Jython][1] interpreter with [django-jython][2] app.
+The usefulness of this is to use Jetty SPDY support together with the capabilities to push associated resources of a main request (SPDY push). If you want further information, [there is an article][9] about this experiment.
 
 Django-SPDY up and running
 ==========================
+To achieve this integration and build war package it's necessary to use [Jython][1] interpreter with [django-jython][2] app.
 Follow these step if you want to be up and running with this experiment!
 
 Prerequisite
