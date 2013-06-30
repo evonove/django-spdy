@@ -63,11 +63,6 @@ Now you can run jetty:
 * https://localhost:8443 (SPDY without push strategy)
 * https://localhost:8444 (SPDY with push strategy)
 
-Pre-build package and configuration
-===================================
-* A **war package** is available in downloads section
-* All Jetty SPDY push **configuration files** are available in downloads section
-
 [1]: http://jython.org/
 [2]: http://code.google.com/p/django-jython/
 [3]: http://spdy.evonove.it
