@@ -71,4 +71,4 @@ Now you can run jetty:
 [6]: http://download.eclipse.org/jetty/
 [7]: http://wiki.eclipse.org/Jetty/Feature/NPN
 [8]: http://www.eclipse.org/jetty/documentation/current/npn-chapter.html#npn-versions
-[9]: https://evonove.it/blog/2012/django-jetty-spdy-blazing-fast/en/
+[9]: https://evonove.it/blog/2012/django-jetty-spdy-blazing-fast/
